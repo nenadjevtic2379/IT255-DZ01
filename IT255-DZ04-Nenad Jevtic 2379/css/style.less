@@ -1,0 +1,102 @@
+
+@color0: #ff3333;
+
+
+@width3: 100%; 
+
+
+@height1: 100%; 
+
+* {
+	border:0;
+	margin: 0;
+	padding:0;
+}
+body {
+	background:white;
+	height:auto;
+}
+#header {
+	background:@color0;
+	border-radius:20px;
+	height:200px;
+	margin: 0 auto;
+	width:@width3;
+}
+#logo {
+	background: url(http://freevectorlogo.net/wp-content/uploads/2013/11/fk-crvena-zvezda-1945-vector-logo-200x200.png) no-repeat;
+	float: left;
+	height:@height1;
+	width: @width3;
+}
+#tekst {
+	color:white;
+	float:right;
+	font-family: italic;
+	font-size: 400%;
+	margin-right:70px;
+	margin-top:50px;
+}
+#sredina {
+	background:yellow;
+	height: auto;
+	width: @width3;
+}
+#leviMeni {
+	background: @color0;
+	border-radius: 20px;
+	float:left;
+	height: auto;
+	margin-left:10px;
+	margin-top:20px;
+	width:200px;
+}
+.meni {
+	line-height:90px;
+	a {
+		color:white;
+		font-size:140%;
+		padding-left: 60px;
+		text-decoration:none;
+		&:hover {
+			color:white;
+			text-decoration: underline;
+		}
+	}
+}
+#slikeMeni {
+	float:left;
+	height: @height1;
+	margin-left: 30px;
+	margin-top:20px;
+	width: 800px;
+}
+.slike {
+	img {
+		padding-bottom:8px;
+		padding-left:100px;
+	}
+}
+#lokacija {
+	float:left;
+	p {
+		font-size: 130%;
+		padding-left:0px;
+		padding-top: 50px;
+	}
+	img {
+		float: left;
+		width:270px;
+	}
+}
+#mapa {
+	a {
+		color:black;
+		height:auto;
+		text-decoration:none;
+		width:auto;
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
