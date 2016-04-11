@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $.ajax({
+url: 'http://numbersapi.com/random/date?json',
+type: "GET",
+success: function(html){
+
+var obj = html;
+$("#godina").append("Godina: "+obj.year);
+$("#broj").append("Broj: " + obj.number);
+$("#nadjeno").append("Nadjeno: " + obj.found);
+}
+});
+});
+</script>
+</head>
+<body>
+<div id="godina"></div>
+<div id="broj"></div>
+<div id="nadjeno"></div>
+</body>
+</html>
+
+
