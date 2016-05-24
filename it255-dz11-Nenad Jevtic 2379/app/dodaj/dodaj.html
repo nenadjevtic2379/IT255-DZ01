@@ -1,0 +1,19 @@
+<form role="form" [ngFormModel]="registerForm">
+ <div class="form-group">
+    <label for="tipSobe">Tip sobe:</label>
+    <input type="text" class="form-control" ngControl='tipSobe'>
+  </div>
+   <div class="form-group">
+    <label for="kvadrata">Kvadrata:</label>
+    <input type="text" class="form-control"  ngControl='kvadrata'>
+  </div>
+  <div class="form-group">
+    <label for="brojKreveta">Broj kreveta:</label>
+    <input type="text" class="form-control"  ngControl='brojKreveta'>
+  </div>
+  <div class="form-group">
+    <label for="pogledNa">Pogled na:</label>
+    <input type="text" class="form-control" ngControl='pogledNa'>
+  </div>
+  <button (click)="onRegister()" class="btn btn-default">Dodaj</button>
+</form>
