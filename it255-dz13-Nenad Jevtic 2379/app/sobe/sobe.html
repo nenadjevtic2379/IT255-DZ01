@@ -1,0 +1,36 @@
+
+
+<form class="navbar-form navbar-left" role="search">
+ <div class="form-group">
+ <input type="text" class="form-control" placeholder="brojKreveta:Search" [(ngModel)]="brojKreveta">
+ </div>
+</form>
+
+<form class="navbar-form navbar-left" role="search">
+ <div class="form-group">
+ <input type="text" class="form-control" placeholder="kvadrati:Search" [(ngModel)]="kvadrata">
+ </div>
+</form>
+
+
+<div class="col-lg-12">
+	<table  class="display" cellspacing="0" >
+	    <thead>
+            <tr>
+                <th>Tip sobe: </th>
+                <th>Kvadrata: </th>
+                <th>Broj kreveta: </th>
+                  <th>Pogled na: </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="#soba of rooms| SearchPipe2: kvadrata | SearchPipe: brojKreveta">
+                <th>{{soba.tipSobe}}</th>
+                <th>{{soba.kvadrata}}</th>
+                  <th>{{soba.brojKreveta}}</th>
+                    <th>{{soba.pogledNa}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
