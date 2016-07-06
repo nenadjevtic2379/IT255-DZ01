@@ -1,0 +1,49 @@
+<style>
+
+#slika1 img{
+
+	width:350px;
+	height:200px;
+
+}
+</style>
+
+<div class="container">
+ <div class="jumbotron">
+ <div class="zvezdice">
+ <span class="glyphicon glyphicon-star-empty"></span>
+ <span class="glyphicon glyphicon-star-empty"></span>
+ <span class="glyphicon glyphicon-star-empty"></span>
+ <span class="glyphicon glyphicon-star-empty"></span>
+ <span class="glyphicon glyphicon-star-empty"></span>
+ </div>
+
+ <h1>MetHotels</h1>
+ <p>Hotel sa 5 zvezdica</p>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+<h3><a [routerLink]="['Sobe']">Sobe</a></h3>
+
+	<div id="slika1">
+		<img src="slike/jedan.jpg"/>
+		</div>
+ </div>
+ <div class="col-sm-4">
+ <h3>Apartmani</h3>
+ <div id="slika2">
+		<img src="slike/dva.jpg"/>
+		</div>
+ </div>
+ <div class="col-sm-4">
+ <h3>Dupleksi</h3>
+ <div id="slika3">
+		<img src="slike/tri.jpg"/>
+		</div>
+ </div>
+ </div>
+
+</div>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
